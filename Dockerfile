@@ -6,7 +6,8 @@ WORKDIR /usr/src/app
 
 # Install dependencies
 RUN apk add --no-cache ffmpeg sox graphicsmagick && \
-    npm install subtitle
+    npm install subtitle && \
+    npm install gm
 
 # Expose the port used by the app
 EXPOSE 3000
